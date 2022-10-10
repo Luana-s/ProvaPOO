@@ -1,17 +1,9 @@
 package exercicio3;
 
-
-
-
-public class Formulario implements Login{
-   
-
- 
-
-
+public class Usuario2 extends App {
     @Override
-    public void LogarFormulario() {
-        System.out.println("logando pelo Formulario!");
+    public void LogariCloud() {
+        System.out.println("logando pelo iCloud!");
         
     }
 
@@ -24,13 +16,17 @@ public class Formulario implements Login{
     @Override
     public void LogarFacebook() {
         System.out.println("logando pelo Facebook!");
-        
+    
     }
 
     @Override
-    public void LogariCloud() {
-        System.out.println("logando pelo iCloud!");
-      
+    public void LogarFormulario() {
+        System.out.println("logando pelo Formulario!");
     }
+
+    public void setLogin(Formulario formulario) {
+    }
+        
+    
     
 }
