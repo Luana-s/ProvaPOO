@@ -12,17 +12,17 @@ public class Main {
         maria.Logar();
 
        
-        BigDecimal preco =new BigDecimal("100");
-        Compra compra=new Compra(preco);
+        BigDecimal preco = new BigDecimal("100");
+        Compra compra = new Compra(preco);
         compra.MetodoPagamento(new Boleto());
 
         Usuario Luana = new Usuario("Luana");
         Luana.Logar();
 
        
-        BigDecimal preco1 =new BigDecimal("50");
-        Compra compra1=new Compra(preco);
-        compra.MetodoPagamento(new Pix());
+        BigDecimal preco1 = new BigDecimal("50");
+        Compra compra1 = new Compra(preco1);
+        compra1.MetodoPagamento(new Pix());
 
         System.out.println("\n");
 
