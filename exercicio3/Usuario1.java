@@ -1,28 +1,27 @@
 package exercicio3;
 
+
 public class Usuario1 extends App {
-    @Override
-    public void LogariCloud() {
-        System.out.println("logando pelo iCloud!");
-        
+    private String nome;
+
+    public Usuario1(String nome){
+        this.nome=nome;
     }
 
-    @Override
-    public void LogarGoogle() {
-        System.out.println("logando pelo Google!");
-       
+    public String getNome() {
+        return nome;
     }
 
-    @Override
-    public void LogarFacebook() {
-        System.out.println("logando pelo Facebook!");
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void Logar(){
+        System.out.println(getNome());
+    }
+
     
-    }
-
-    @Override
-    public void LogarFormulario() {
-        System.out.println("logando pelo Formulario!");
-    }
+    
 
     
 }

@@ -1,43 +1,44 @@
 package exercicio3;
 
-public abstract class App {
+import exercicio3.log.Google;
+import exercicio3.log.Login;
 
-    Login login;
-    public void setLogin(Login login){
-        this.login=login;
+public  class App {
+    private String acesso;
+
+    public App(){
+        this.acesso=acesso;
     }
 
-    public void LogarGoogle(){
-        if (this.login != null) {
-            this.login.LogarGoogle();
-        } else {
-            System.out.println("Não há login do usuario pelo Google!");
-        }
+    public String getAcesso() {
+        return acesso;
     }
-    public void LogarFormulario(){
-        if (this.login != null) {
-            this.login.LogarFormulario();
-        } else {
-            System.out.println("Não há login do usuario pelo Formulario!");
-        }
+
+    public void setAcesso(String acesso) {
+        this.acesso = acesso;
     }
-    public void LogariCloud(){
-        if (this.login != null) {
-            this.login.LogariCloud();
-        } else {
-            System.out.println("Não há login do usuario pelo iCloud!");
-        }
-     }
 
-     public void LogarFacebook(){
-        if (this.login != null) {
-            this.login.LogarFacebook();
-        } else {
-            System.out.println("Não há login do usuario pelo Facebook!");
-        }
-     }
-
+    public void MetodoAcesso(Login login){
+        login.Logar(acesso);
         
+
+    }
+
+
+   
+
+    public void Logar(){
+        
+    }
+
+    public void MetodoLogin(Login login) {
+        login.Logar(acesso);
+
+    }
+
+
+    
+ 
 
     }
 
