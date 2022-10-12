@@ -1,4 +1,4 @@
-public class main1 {
+public class Main {
     public static void main(String[] args) {
         Cliente nome = new Cliente("Luana");
         ContaCorrente contac = new ContaCorrente("Peter", 12313);
