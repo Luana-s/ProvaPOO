@@ -1,18 +1,31 @@
-package exercício6;
-
 public class Cliente {
-    private String nome;
+    protected String nome;
+    protected int agencia;
 
-    public String Client(String nome){
-        return this.nome = nome;
+    public Cliente(String string) {
     }
-    public String getNome(){
+
+    @Override
+    public String toString() {
+        return "Nome do Cliente: " + nome;
+    }
+
+    public String getNome() {
         return nome;
     }
-    public void setNome(String nome){
+
+    public void setNome(String nome) {
         this.nome = nome;
     }
-    public String toString(){
-        return("Cliente, : ");
+
+    public int getAgencia() {
+        return agencia;
+    }
+
+    public void setAgencia(int agencia) {
+        this.agencia = agencia;
+    }
+
+    public void cliente(String string) {
     }
 }

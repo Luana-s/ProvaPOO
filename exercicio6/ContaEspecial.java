@@ -1,7 +1,11 @@
-package exercício6;
-
 public class ContaEspecial extends ContaCorrente{
+
     private float limite;
+    public ContaEspecial(String nome, int agencia, int limite) {
+        super(nome, agencia);
+        this.limite = limite;
+    }
+    
 
     public void ContaEspeciall(float saldo, float limite){
         this.limite = limite;
@@ -13,15 +17,19 @@ public class ContaEspecial extends ContaCorrente{
         this.limite = limite;
     }
     @Override
+    public void Depositar(float valor){
+        this.saldo = valor;
+    }
+    @Override
     public boolean Sacar(float valor){
-        if(valor <= this.limite){
-            this.setSaldo(saldo-valor);
-            return Sacar(this.getSaldo());
+        if(valor <= this.getLimite()){
+            this.setSaldo(this.saldo - valor);
+            return super.Sacar(this.getSaldo());
         }
         return false;
     }
-    public String toString(){
-        return this.toString();
-        
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }

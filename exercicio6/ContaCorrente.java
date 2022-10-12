@@ -1,23 +1,18 @@
-package exercício6;
-
 public class ContaCorrente {
     protected float saldo;
 
+    Cliente c = new Cliente(null);
     public void Contal(){
 
     }
-    public float getSaldo(){
-        return saldo;
-    }
-    public void setSaldo(float saldo){
-        this.saldo = saldo;
-    }
-    public void Conta(float saldo){
-        this.saldo = saldo;
+    public ContaCorrente(String nome,int agencia) {
+        c.nome = nome;
+        c.agencia = agencia;
     }
     public void Depositar(float valor){
-        this.saldo = valor;
+        this.setSaldo(valor);;
     }
+
     public boolean Sacar(float valor){
         float extrato = this.saldo - valor;
         if(extrato > 0){
@@ -26,11 +21,23 @@ public class ContaCorrente {
         }
         return false;
     }
+
+    public void transferir(float transferir){
+        float resultado = this.saldo - transferir;
+        if(resultado > 0){
+            this.setSaldo(resultado);
+        }
+    }
+    public float getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(float saldo) {
+        this.saldo = saldo;
+    }
     @Override
-    public String toString(){
-        return ("saldo: " + saldo);
+    public String toString() {
+        return "Nome do Cliente: " + c.nome + "\nSaldo: " + saldo;
     }
-    public boolean Trasnferir(ContaCorrente conta){
-        return true;
-    }
+    
 }
