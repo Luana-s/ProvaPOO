@@ -13,7 +13,7 @@ public class Main1 {
         Maria.Logar();
         
         String acesso=new String("093283");
-        App app=new App();
+        App app=new App(acesso);
         app.MetodoLogin(new Google());
 
         System.out.println("\n");
@@ -32,7 +32,7 @@ public class Main1 {
         Luana.Logar();
         
         String acesso1=new String("093283");
-        App app1=new App();
+        App app1=new App(acesso1);
         app1.MetodoLogin(new iCloud());
 
         System.out.println("\n");

@@ -6,7 +6,7 @@ import exercicio3.log.Login;
 public  class App {
     private String acesso;
 
-    public App(){
+    public App(String acesso){
         this.acesso=acesso;
     }
 

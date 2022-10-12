@@ -1,9 +1,12 @@
 package exercicio3;
 
 
-public class Usuario1 extends App {
-    private String nome;
+public class Usuario1 {
+    protected String nome;
 
+    /**
+     * @param nome
+     */
     public Usuario1(String nome){
         this.nome=nome;
     }
