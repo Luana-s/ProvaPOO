@@ -27,6 +27,9 @@ public class ContaCorrente {
         if(resultado > 0){
             this.setSaldo(resultado);
         }
+        else{
+            System.out.println("Nao e possivel transferir ");
+        }
     }
     public float getSaldo() {
         return saldo;
