@@ -2,7 +2,7 @@ package exercicio3;
 
 
 public class Usuario1 {
-    protected String nome;
+    private String nome;
 
     /**
      * @param nome

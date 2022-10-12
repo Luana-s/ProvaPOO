@@ -1,6 +1,5 @@
 package exercicio3;
 
-import exercicio3.log.Google;
 import exercicio3.log.Login;
 
 public  class App {
