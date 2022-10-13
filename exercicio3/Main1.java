@@ -18,6 +18,16 @@ public class Main1 {
 
         System.out.println("\n");
 
+        Usuario1 Luana = new Usuario1("LUANA");
+        Luana.Logar();
+        
+        String acesso1=new String("093283");
+        App app1=new App(acesso1);
+        app1.MetodoLogin(new iCloud());
+
+        System.out.println("\n");
+
+
         System.out.println("-----trocando metodo de Login------" );
         System.out.println("\n");
         Maria.Logar();
@@ -28,16 +38,8 @@ public class Main1 {
         System.out.println("\n");
 
 
-        Usuario1 Luana = new Usuario1("LUANA");
-        Luana.Logar();
-        
-        String acesso1=new String("093283");
-        App app1=new App(acesso1);
-        app1.MetodoLogin(new iCloud());
-
-        System.out.println("\n");
-
-        System.out.println("-----trocando metodo de Login------" );
+       
+       
         System.out.println("\n");
         Luana.Logar();
         app.MetodoLogin(new Formulario());

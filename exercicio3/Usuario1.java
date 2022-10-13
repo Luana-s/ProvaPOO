@@ -3,6 +3,7 @@ package exercicio3;
 
 public class Usuario1 {
     private String nome;
+    
 
     /**
      * @param nome
