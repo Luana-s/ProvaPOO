@@ -8,7 +8,7 @@ class Carro{
             this.quantpessoas = quantpessoas;
             this.quantmaxima = quantmaxima;
             this.tipocarro = tipocarro;
-            System.out.println("Não é permitido essa quantidade de pessoas no carro");
+            System.out.println("Não é permitido essa quantidade de pessoas no carro!");
         }
     }
     public int getQuantpessoas(){
