@@ -2,7 +2,6 @@ import java.util.ArrayList;
 
 public class Estacionamento {
     int quantpessoascarro;
-    int pessoasestaci;
     private ArrayList<Carro> carros = new ArrayList<>();
 
     public void estacionar(Carro carro){
@@ -10,8 +9,9 @@ public class Estacionamento {
     }
     public void quantcarros(){
         for (Carro carro : carros) {
-            System.out.println(carros);
+            System.out.println(carro);
         }
+      
     }
     public int quantpessoascarro(){
         int total = 0;

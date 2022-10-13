@@ -3,13 +3,17 @@ class Carro{
     String tipocarro;
     int quantmaxima;
 
-    public Carro(int quantpessoas, int quantmaxima, String tipocarro){      
-        if (quantpessoas > quantmaxima){
-            this.quantpessoas = quantpessoas;
+    public Carro(int quantpessoas, int quantmaxima, String tipocarro){ 
+        this.quantpessoas = quantpessoas;
             this.quantmaxima = quantmaxima;
-            this.tipocarro = tipocarro;
+            this.tipocarro = tipocarro;     
+        if (quantpessoas > quantmaxima){
+            
             System.out.println("Não é permitido essa quantidade de pessoas no carro!");
+            
+           
         }
+          
     }
     public int getQuantpessoas(){
         return quantpessoas;
@@ -30,6 +34,6 @@ class Carro{
         this.tipocarro = tipocarro;
     }
     public String toString(){
-        return "Quantidade de Pessoas: " + quantpessoas + ",\n quantidade maxima: " + quantmaxima + ",\n Tipo do carro: \n" + tipocarro;
+       return "Quantidade de Pessoas dentro do carro: " + quantpessoas + ",\n quantidade maxima de pessoas dentro do carro: " + quantmaxima + ",\n Tipo do carro: " + tipocarro;
     }
 }
