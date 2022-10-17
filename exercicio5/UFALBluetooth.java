@@ -3,19 +3,19 @@ package exercicio5;
 public abstract class UFALBluetooth {
 
     public UFALBluetooth(){
-        AbrirConexao();
-        FecharConexao();
-        ProcessarDados();
+        abrirConexao();
+        fecharConexao();
+        processarDados();
 
     }
 
-    public void  AbrirConexao(){
+    public void  abrirConexao(){
         System.out.println("Abrindo conexao ao Bluetooth ");
     }
 
-    protected abstract void ProcessarDados();
+    protected abstract void processarDados();
 
-    public void  FecharConexao(){
+    public void  fecharConexao(){
         System.out.println(" Fechando conexao ao Bluetooth ");
     }
 
