@@ -13,7 +13,7 @@ public class Usuario {
         this.nome = nome;
     }
 
-    public void Logar(){
+    public void logar(){
         System.out.println(getNome());
     }
     

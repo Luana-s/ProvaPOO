@@ -19,11 +19,12 @@ public  class Compra {
     }
 
 
-    public void MetodoPagamento(Pagamento pagamento){
-        pagamento.Pagar(preco);
+    public void metodoPagamento(Pagamento pagamento){
+        pagamento.pagar(preco);
         
 
     }
-
-    
+    public void setMetodoPagamento(Pagamento pagamneto) {
+        
+    }   
 } 

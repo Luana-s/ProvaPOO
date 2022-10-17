@@ -9,32 +9,32 @@ public class Main {
    
     public static void main(String []args) {
         Usuario maria = new Usuario("Maria");
-        maria.Logar();
+        maria.logar();
 
        
         BigDecimal preco = new BigDecimal("100");
         Compra compra = new Compra(preco);
-        compra.MetodoPagamento(new Boleto());
+        compra.metodoPagamento(new Boleto());
 
         Usuario Luana = new Usuario("Luana");
-        Luana.Logar();
+        Luana.logar();
 
        
         BigDecimal preco1 = new BigDecimal("50");
         Compra compra1 = new Compra(preco1);
-        compra1.MetodoPagamento(new Pix());
+        compra1.metodoPagamento(new Pix());
 
         System.out.println("\n");
 
         System.out.println("-----trocando metodo de Pagamento------" );
         System.out.println("\n");
-        maria.Logar();
-        compra.MetodoPagamento(new Pix());
-        compra.MetodoPagamento(new CartaoDeCredito());
+        maria.logar();
+        compra.metodoPagamento(new Pix());
+        compra.metodoPagamento(new CartaoDeCredito());
 
         System.out.println("\n");
-        Luana.Logar();
-        compra.MetodoPagamento(new CartaoDeCredito());
+        Luana.logar();
+        compra.metodoPagamento(new CartaoDeCredito());
 
 
 
