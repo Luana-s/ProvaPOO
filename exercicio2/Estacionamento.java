@@ -1,22 +1,22 @@
 import java.util.ArrayList;
 
 public class Estacionamento {
-    int quantpessoascarro;
+    int quantPessoasCarro;
     private ArrayList<Carro> carros = new ArrayList<>();
 
     public void estacionar(Carro carro){
         carros.add(carro);
     }
-    public void quantcarros(){
+    public void quantCarros(){
         for (Carro carro : carros) {
             System.out.println(carro);
         }
       
     }
-    public int quantpessoascarro(){
+    public int quantPessoasCarro(){
         int total = 0;
         for (Carro carro : carros){
-            total += carro.getQuantpessoas();
+            total += carro.getQuantPessoas();
         }
         return total;
     }

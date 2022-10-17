@@ -1,4 +1,4 @@
-public class Principal2 {
+public class Main {
     public static void main(String[] args) {
         Estacionamento es = new Estacionamento();
         Carro c = new Carro(4, 4, "Uno");
@@ -7,8 +7,8 @@ public class Principal2 {
        
         es.estacionar(c); 
         es.estacionar(c2);
-        System.out.println("Total de pessoas  dentro do estacionamento: " + es.quantpessoascarro() );
-        es.quantcarros();
+        System.out.println("Total de pessoas  dentro do estacionamento: " + es.quantPessoasCarro() );
+        es.quantCarros();
       
         
     }

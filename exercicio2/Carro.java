@@ -1,13 +1,13 @@
 class Carro{
-    int quantpessoas;
-    String tipocarro;
-    int quantmaxima;
+    int quantPessoas;
+    String tipoCarro;
+    int quantMaxima;
 
-    public Carro(int quantpessoas, int quantmaxima, String tipocarro){ 
-        this.quantpessoas = quantpessoas;
-            this.quantmaxima = quantmaxima;
-            this.tipocarro = tipocarro;     
-        if (quantpessoas > quantmaxima){
+    public Carro(int quantPessoas, int quantMaxima, String tipoCarro){ 
+        this.quantPessoas = quantPessoas;
+            this.quantMaxima = quantMaxima;
+            this.tipoCarro = tipoCarro;     
+        if (quantPessoas > quantMaxima){
             
             System.out.println("Não é permitido essa quantidade de pessoas no carro!");
             
@@ -15,25 +15,25 @@ class Carro{
         }
           
     }
-    public int getQuantpessoas(){
-        return quantpessoas;
+    public int getQuantPessoas(){
+        return quantPessoas;
     }
-    public int getQuantmaxima(){
-        return quantmaxima;
+    public int getQuantMaxima(){
+        return quantMaxima;
     }
-    public String getTipocarro(){
-        return tipocarro;
+    public String getTipoCarro(){
+        return tipoCarro;
     }
-    public void setQuantpessoas(int quantpessoas){
-        this.quantpessoas = quantpessoas;
+    public void setQuantPessoas(int quantPessoas){
+        this.quantPessoas = quantPessoas;
     }
-    public void setQuantmaxima(int quantmaxima){
-        this.quantmaxima = quantmaxima;
+    public void setQuantMaxima(int quantMaxima){
+        this.quantMaxima = quantMaxima;
     }
-    public void setTipocarro(String tipocarro){
-        this.tipocarro = tipocarro;
+    public void setTipoCarro(String tipoCarro){
+        this.tipoCarro = tipoCarro;
     }
     public String toString(){
-       return "Quantidade de Pessoas dentro do carro: " + quantpessoas + ",\n quantidade maxima de pessoas dentro do carro: " + quantmaxima + ",\n Tipo do carro: " + tipocarro;
+       return "Quantidade de Pessoas dentro do carro: " + quantPessoas + ",\n quantidade maxima de pessoas dentro do carro: " + quantMaxima + ",\n Tipo do carro: " + tipoCarro;
     }
 }
