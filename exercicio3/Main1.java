@@ -10,30 +10,30 @@ public class Main1 {
 
     public static void main(String[] args) {
         Usuario1 Maria = new Usuario1("MARIA");
-        Maria.Logar();
+        Maria.logar();
         
         String acesso=new String("093283");
         App app=new App(acesso);
-        app.MetodoLogin(new Google());
+        app.metodoLogin(new Google());
 
         System.out.println("\n");
 
         Usuario1 Luana = new Usuario1("LUANA");
-        Luana.Logar();
+        Luana.logar();
         
         String acesso1=new String("093283");
         App app1=new App(acesso1);
-        app1.MetodoLogin(new iCloud());
+        app1.metodoLogin(new iCloud());
 
         System.out.println("\n");
 
 
         System.out.println("-----trocando metodo de Login------" );
         System.out.println("\n");
-        Maria.Logar();
-        app.MetodoLogin(new Formulario());
-        app.MetodoLogin(new Facebook());
-        app.MetodoLogin(new iCloud());
+        Maria.logar();
+        app.metodoLogin(new Formulario());
+        app.metodoLogin(new Facebook());
+        app.metodoLogin(new iCloud());
 
         System.out.println("\n");
 
@@ -41,9 +41,9 @@ public class Main1 {
        
        
         System.out.println("\n");
-        Luana.Logar();
-        app.MetodoLogin(new Formulario());
-        app.MetodoLogin(new Facebook());
+        Luana.logar();
+        app.metodoLogin(new Formulario());
+        app.metodoLogin(new Facebook());
        
 
     }

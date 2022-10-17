@@ -4,14 +4,12 @@ public class Google implements Login {
     public Google() {
     }
 
-
-    
-
     @Override
-    public void Logar(String acesso) {
+    public void logar(String acesso) {
         System.out.println("logando pelo Google!");
         
     }
+}
 
 
 
@@ -19,13 +17,3 @@ public class Google implements Login {
    
 
 
-
-
-    @Override
-    public void setMetodoLogin(Login login) {
-       
-        
-    }
-    
-
-}

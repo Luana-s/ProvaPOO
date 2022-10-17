@@ -20,7 +20,7 @@ public class Usuario1 {
         this.nome = nome;
     }
 
-    public void Logar(){
+    public void logar(){
         System.out.println(getNome());
     }
 

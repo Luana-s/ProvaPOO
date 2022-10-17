@@ -4,16 +4,12 @@ public class Facebook implements Login{
 
 
     @Override
-    public void Logar(String acesso) {
+    public void logar(String acesso) {
         System.out.println("logando pelo Facebook!");
         
     }
 
-    @Override
-    public void setMetodoLogin(Login login) {
-       
-        
-    }
+    
 
 
     

@@ -20,21 +20,21 @@ public  class App {
         this.acesso = acesso;
     }
 
-    public void MetodoAcesso(Login login){
-        login.Logar(acesso);
+    public void metodoAcesso(Login login){
+        login.logar(acesso);
         
 
     }
 
-
-   
-
-    public void Logar(){
+    public void logar(){
         
     }
 
-    public void MetodoLogin(Login login) {
-        login.Logar(acesso);
+    public void metodoLogin(Login login) {
+        login.logar(acesso);
+
+    }
+    public void setMetodoLogin(Login login){
 
     }
 

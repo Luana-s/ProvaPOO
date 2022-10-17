@@ -5,17 +5,8 @@ public class Formulario implements Login{
     
 
     @Override
-    public void Logar(String acesso) {
+    public void logar(String acesso) {
         System.out.println("logando pelo Formulario!");
         
-    }
-
-    @Override
-    public void setMetodoLogin(Login login) {
-       
-        
-    }
- 
-    
-    
+    }    
 }
