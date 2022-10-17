@@ -15,13 +15,13 @@ public class BoloChocolate extends BoloDecorator implements Comprar{
             
     }
     @Override
-    public double ValorCompra() {
-        return super.ValorCompra() + 20;      
+    public double valorCompra() {
+        return super.valorCompra() + 20;      
     }
     
     @Override
-    public String ListarProdutos() {
-        return("Preco:" + ValorCompra() + ", Items: , " + adicionarProduto());
+    public String listarProdutos() {
+        return("Preco:" + valorCompra() + ", Items: , " + adicionarProduto());
         
     }
 }

@@ -6,9 +6,9 @@ public interface Comprar{
    
     public String adicionarProduto();
 
-    public double ValorCompra();
+    public double valorCompra();
 
-    public String ListarProdutos();
+    public String listarProdutos();
 
     
 

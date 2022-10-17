@@ -15,7 +15,7 @@ public class Main {
         
         System.out.println("\n");
 
-        System.out.println(bolo1.ListarProdutos());
+        System.out.println(bolo1.listarProdutos());
 
 
         System.out.println("\n");
@@ -24,17 +24,17 @@ public class Main {
 
         Comprar bolo2 =new BoloSimples();
         bolo2 = new BoloChocolate(bolo2);
-        System.out.println(bolo2.ListarProdutos());
+        System.out.println(bolo2.listarProdutos());
 
         Comprar bolo3 =new BoloSimples();
         bolo3 = new BoloMorango(bolo3);
-        System.out.println(bolo3.ListarProdutos());
+        System.out.println(bolo3.listarProdutos());
 
         
         Comprar bolo4 =new BoloSimples();
         bolo4 = new BoloMorango(bolo4);
         bolo4 = new BoloChocolate(bolo4);
-        System.out.println(bolo4.ListarProdutos());
+        System.out.println(bolo4.listarProdutos());
 
 
 

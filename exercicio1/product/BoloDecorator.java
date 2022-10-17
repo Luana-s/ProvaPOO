@@ -15,16 +15,15 @@ public abstract class BoloDecorator {
     }
 
 
-    public double ValorCompra(){
-        return boloDecorator.ValorCompra(); 
+    public double valorCompra(){
+        return boloDecorator.valorCompra(); 
 
     }
 
-    public String ListarProdutos(){
-        return boloDecorator.ListarProdutos();
+    public String listarProdutos(){
+        return boloDecorator.listarProdutos();
 
     }
-
     
     public Comprar getBolo(){
         return boloDecorator;
