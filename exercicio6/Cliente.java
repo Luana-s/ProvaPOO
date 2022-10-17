@@ -1,6 +1,17 @@
+import java.util.ArrayList;
+
 public class Cliente {
     protected String nome;
     protected int agencia;
+    private ArrayList<ContaCorrente> contaCorrente = new ArrayList<>();
+
+    public ArrayList<ContaCorrente> getContaCorrente() {
+        return contaCorrente;
+    }
+
+    public void setContaCorrente(ArrayList<ContaCorrente> contaCorrente) {
+        this.contaCorrente = contaCorrente;
+    }
 
     public Cliente(String string) {
     }
@@ -27,5 +38,11 @@ public class Cliente {
     }
 
     public void cliente(String string) {
+    }
+
+    public void quantContaCorrente(){
+        for (ContaCorrente conta :  contaCorrente) {
+            System.out.println(conta);
+        }
     }
 }
